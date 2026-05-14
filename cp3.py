@@ -10,9 +10,11 @@ for i in range(len(temperaturas)):
     media_das_temperaturas = soma_das_temperaturas / 4
     sala.append(x)
    
-    print(f"Temperatura média da sala de aula {i+1}: {media_das_temperaturas}, e a quantidade de dias com temperatura acima de 33°C: {x}")
-
-
+   
+    print(f"Sala {i+1}")
+    print(f"Temperatura média da sala de aula {i+1}: {media_das_temperaturas}")
+    print(f"Quantidade de dias com temperatura acima de 33°C na sala de aula {i+1}: {x}")
+    print()
 for i in range(len(sala)):
     if sala[i] > sala[1] and sala[i] > sala[2] and sala[i] > sala[3]:
         print(f"A sala de aula {i+1} tem a maior quantidade de dias com temperatura acima de 33°C, com {sala[i]} dias.")
